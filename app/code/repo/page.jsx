@@ -11,9 +11,8 @@ const fetchRepos = async () => {
 
 async function ReposPage() {
   const repos = await fetchRepos();
-  console.log(repos);
   return (
-    <div>
+    <div className="repos-container">
       <h1>All My Repository</h1>
       <ul className="repo-list">
         {repos.map((repo) => {
